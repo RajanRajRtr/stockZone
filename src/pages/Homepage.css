@@ -1,0 +1,23 @@
+
+.cardWithShadow {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 8px;
+    background-color: white;
+    min-height: 45%;
+  }
+  
+  .cardWithShadow h2 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  .cardWithShadow span {
+    display: block;
+    margin-top: 10px;
+    font-size: 16px;
+    color: gray;
+  }
+
+
+  

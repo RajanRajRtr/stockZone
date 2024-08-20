@@ -1,0 +1,91 @@
+footer {
+  background-color: #0f3460;
+  padding: 80px 0;
+  color: #fff;
+}
+
+footer .box {
+  padding: 0 20px;
+}
+
+footer h1 {
+  margin: 0;
+  font-size: 25px;
+  font-weight: 800;
+  width: max-content;
+}
+
+footer .logo {
+  color: white;
+  display:flex;
+  align-items:center;
+  gap:5px;
+  margin-bottom: 20px;
+}
+footer h2 {
+  font-size: 20px;
+}
+
+footer .row {
+  justify-content: center;
+}
+
+footer p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  opacity: 0.5;
+}
+
+footer h2 {
+  margin-bottom: 20px;
+}
+
+footer ul {
+  padding: 0;
+}
+
+footer li {
+  margin-bottom: 10px;
+  opacity: 0.5;
+}
+
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.whatsapp-chat-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  /* background-color: #66ec54; */
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(223, 8, 8, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 1000;
+  animation: blink 1s infinite;
+}
+
+.whatsapp-chat-button img {
+  width: 55px;
+  height: 56px;
+}
+
+.wrapperz {
+  text-align: center;
+  background-color: white;
+}
+
+.wrapperz_ul{
+  font-size: larger;
+}
