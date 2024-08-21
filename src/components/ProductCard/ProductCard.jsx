@@ -133,7 +133,7 @@ const ProductCard = ({ title, productItem }) => {
               >
                 <img
                   loading="lazy"
-                  src={`${process.env.REACT_APP_API_URL}/${productItem.imgUrl}`}
+                  src={`${process.env.REACT_APP_API_URI}/${productItem.imgUrl}`}
                   alt="Stock Img"
                   style={{ width: "90%", minHeight: "20vh" }}
                 />
