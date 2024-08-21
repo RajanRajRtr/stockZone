@@ -416,7 +416,12 @@ button.add {
 
 @media (max-width: 768px) {
   .button-container {
-    bottom: 20px; /* Adjust bottom position for tablet/mobile views */
+    bottom: 0px;
+  }
+
+  .product {
+    height: 50vh;
+    width: 22%;
   }
 }
 
