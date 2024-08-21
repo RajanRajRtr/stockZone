@@ -66,6 +66,7 @@ const AdminOrders = () => {
       .get(`${process.env.REACT_APP_API_URL}/Cart-list`)
       .then((res) => {
         setData(res.data);
+        console.log("res.data :>> ", res.data);
       });
   };
 
@@ -89,11 +90,11 @@ const AdminOrders = () => {
     <div>
       <Container>
         <Row>
-        <Col md={10}>
-          <center>
-            {" "}
-            <h1 class="mt-5 pb-5 ">User Order Details</h1>
-          </center>
+          <Col md={10}>
+            <center>
+              {" "}
+              <h1 class="mt-5 pb-5 ">User Order Details</h1>
+            </center>
           </Col>
           <Col md={2} className="pt-5 mt-2">
             {" "}
@@ -108,11 +109,9 @@ const AdminOrders = () => {
             </Button> */}
           </Col>
         </Row>
-        <Row >
-        
-        
-        <Table columns={columns} dataSource={data} rowKey="_id" />
-        </Row> 
+        <Row>
+          <Table columns={columns} dataSource={data} rowKey="_id" />
+        </Row>
       </Container>
     </div>
   );
