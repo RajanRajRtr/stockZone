@@ -1,11 +1,10 @@
-
 .wrapper {
   text-align: center;
   background-color: white;
 }
-.testimonal{
+.testimonal {
   text-align: center;
-  background-color:#e3ecf2
+  background-color: #e3ecf2;
 }
 .icon {
   width: 40px;
@@ -40,7 +39,6 @@
   margin-top: 17px;
 }
 
-
 .gradient-card {
   background: linear-gradient(to right, rgb(255 255 255), #afc8ddf0);
   height: 100%;
@@ -49,4 +47,8 @@
   width: 85%;
 }
 
-
+/* @media (min-width: 320px) and (max-width: 426px) {
+  .Blogs_cards > {
+    background-color: aquamarine;
+  }
+} */

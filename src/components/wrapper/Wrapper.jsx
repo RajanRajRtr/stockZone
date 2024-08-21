@@ -8,7 +8,6 @@ const Wrapper = () => {
     <section className="wrapper background">
       <Container>
         <Row>
-          
           <Col md={8}>
             <iframe
               width="100%"
@@ -21,16 +20,24 @@ const Wrapper = () => {
               allowfullscreen
             ></iframe>{" "}
           </Col>
-          <Col md={4}>
+          <Col md={4} className="Blogs_cards">
             <Card
               style={{
-                width: "85%",
                 boxShadow: "0 4px 8px 6px rgba(0, 0, 0, 0.1)",
                 border: "none",
               }}
             >
               <>
-              <h3 style={{backgroundColor:"#0f3460", padding:"5px", color:"white", borderTopLeftRadius: "8px"}}>Blogs</h3>
+                <h3
+                  style={{
+                    backgroundColor: "#0f3460",
+                    padding: "5px",
+                    color: "white",
+                    borderTopLeftRadius: "8px",
+                  }}
+                >
+                  Blogs
+                </h3>
                 <Carousel style={{ paddingBottom: "8px" }}>
                   <Carousel.Item interval={1000}>
                     {/* <ExampleCarouselImage text="First slide" /> */}
