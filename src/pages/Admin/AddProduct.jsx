@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import axios from "axios";
 import { InputText } from "primereact/inputtext";
@@ -8,7 +7,7 @@ import { toast } from "react-toastify";
 import { useNavigate } from "react-router-dom";
 import "./Admin.css";
 
-const AddProduct = () => {
+const AddProduct = ({ handleClose }) => {
   const [productName, setProductName] = useState("");
   const [imgFile, setImgFile] = useState(null);
   const [videoUrl, setVideoUrl] = useState("");
@@ -30,25 +29,25 @@ const AddProduct = () => {
     formData.append("price", price);
     formData.append("description", description);
     formData.append("news", news);
-
+    handleClose();
     try {
-      const response = await axios.post(`${process.env.REACT_APP_API_URL}/createproduct`, formData);
+      const response = await axios.post(
+        `${process.env.REACT_APP_API_URL}/createproduct`,
+        formData
+      );
       if (response.status === 200) {
         toast.success("Product added successfully");
         setProductName("");
         setImgFile("");
         setPrice("");
         setDescription("");
-        setNews("")
-        setVideoUrl("")
-        
-        
+        setNews("");
+        setVideoUrl("");
       } else {
         toast.error("Unable to add product");
       }
     } catch (error) {
       toast.error("Something Went Wrong Try Again Later!");
-      
     }
   };
 
@@ -120,7 +119,7 @@ const AddProduct = () => {
               />
             </Col>
             <Col md={6}>
-            <label htmlFor="description" className="pe-3">
+              <label htmlFor="description" className="pe-3">
                 News:
               </label>
               <InputTextarea
