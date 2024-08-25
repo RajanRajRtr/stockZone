@@ -73,7 +73,7 @@ const AdminOrders = () => {
   const handleDelete = async (id) => {
     try {
       const response = await axios.delete(
-        `http://localhost:5007/api/delete-cart/${id}`
+        `${process.env.REACT_APP_API_URL}/delete-cart/${id}`
       );
       if (response.status === 200) {
         toast.success("Cart item deleted successfully");

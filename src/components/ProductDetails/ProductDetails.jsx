@@ -7,15 +7,12 @@ import "./product-details.css";
 import Modal from "react-bootstrap/Modal";
 import Cart from "../../pages/Cart";
 import Offcanvas from "react-bootstrap/Offcanvas";
-import { FaFilePdf } from 'react-icons/fa';
+import { FaFilePdf } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa6";
 // import PDFViewer from 'pdf-viewer-reactjs'
 
-
-
-
 const ProductDetails = ({ selectedProduct }) => {
-  console.log("selectedProduct", selectedProduct)
+  console.log("selectedProduct", selectedProduct);
   const dispatch = useDispatch();
   const [show, setShow] = useState(false);
   const [showpdf, setShowpdf] = useState(false);
@@ -36,17 +33,19 @@ const ProductDetails = ({ selectedProduct }) => {
     // toggleShow1()
     dispatch(addToCart({ product: selectedProduct, num: quantity }));
     toast.success("Product has been added to cart!");
-    handleClose()
+    handleClose();
   };
-
-
 
   return (
     <section className="product-page">
       <Container>
         <Row className="justify-content-center">
           <Col md={6}>
-            <img loading="lazy" src={`http://localhost:5007/${selectedProduct.imgUrl}`} alt="upload" />
+            <img
+              loading="lazy"
+              src={`${process.env.REACT_APP_API_URL}/${selectedProduct.imgUrl}`}
+              alt="upload"
+            />
           </Col>
           <Col md={6}>
             <h2>{selectedProduct?.product_Name}</h2>
@@ -67,10 +66,20 @@ const ProductDetails = ({ selectedProduct }) => {
             {/* <p>{selectedProduct?.description}</p> */}
             <p>{selectedProduct?.Description}</p>
             <div className="mb-5">
-          
-              <FaYoutube size={28} className="me-3" style={{cursor:"pointer"}} color="red" onClick={handleShow} />
-              
-              <FaFilePdf size={23} color="blue" style={{cursor:"pointer"}}  onClick={handleShowpdf} />
+              <FaYoutube
+                size={28}
+                className="me-3"
+                style={{ cursor: "pointer" }}
+                color="red"
+                onClick={handleShow}
+              />
+
+              <FaFilePdf
+                size={23}
+                color="blue"
+                style={{ cursor: "pointer" }}
+                onClick={handleShowpdf}
+              />
             </div>
             {/* <input
               className="qty-input"
@@ -86,7 +95,6 @@ const ProductDetails = ({ selectedProduct }) => {
             >
               Buy
             </Button>
-
             <Button
               variant="danger"
               onClick={() => handelAdd(selectedProduct, quantity)}
@@ -95,12 +103,19 @@ const ProductDetails = ({ selectedProduct }) => {
             </Button>{" "}
           </Col>
           <Col md={12}>
-          <hr/>
-          <center><h6 tyle={{backgroundColor: "rgb(27 127 204 / 65%)",
-    color: "white"}}>News</h6></center>
+            <hr />
+            <center>
+              <h6
+                tyle={{
+                  backgroundColor: "rgb(27 127 204 / 65%)",
+                  color: "white",
+                }}
+              >
+                News
+              </h6>
+            </center>
 
-  <u>{selectedProduct.News}</u>
-
+            <u>{selectedProduct.News}</u>
           </Col>
         </Row>
         <Modal
@@ -109,10 +124,10 @@ const ProductDetails = ({ selectedProduct }) => {
           onHide={handleClose}
           size="lg"
           aria-labelledby="contained-modal-title-vcenter"
-          centered>
+          centered
+        >
           <Modal.Header closeButton>
             <Modal.Title id="contained-modal-title-center">Youtube</Modal.Title>
-            
           </Modal.Header>
           <Modal.Body>
             <>
@@ -143,23 +158,21 @@ const ProductDetails = ({ selectedProduct }) => {
         >
           <Modal.Header closeButton>
             <Modal.Title id="contained-modal-title-center">Pdf </Modal.Title>
-            
           </Modal.Header>
           <Modal.Body>
             <>
-            {/* <PDFViewer
+              {/* <PDFViewer
             document={{
                 url: 'https://arxiv.org/pdf/quant-ph/0410100.pdf',
             }}
         /> */}
-        <iframe src="https://arxiv.org/pdf/quant-ph/0410100.pdf" width="550"
-                height="315"></iframe>
+              <iframe
+                src="https://arxiv.org/pdf/quant-ph/0410100.pdf"
+                width="550"
+                height="315"
+              ></iframe>
             </>
-            
-            
           </Modal.Body>
-
-          
         </Modal>
         {/* <Offcanvas
         show={show1}

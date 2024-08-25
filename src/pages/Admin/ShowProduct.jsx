@@ -86,7 +86,7 @@ const ShowProduct = () => {
   const handleDelete = async (id) => {
     try {
       const response = await axios.delete(
-        `http://localhost:5007/api/delete-product/${id}`
+        `${process.env.REACT_APP_API_URL}/delete-product/${id}`
       );
       if (response.status === 200) {
         toast.success("Product item deleted successfully");
