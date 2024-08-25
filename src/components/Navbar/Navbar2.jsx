@@ -39,6 +39,7 @@ const NavBar2 = ({ toggleSidebar, show }) => {
   }, [show]);
 
   const Logout = () => {
+    toggleSidebar();
     navigate("/");
     window.location.reload();
   };
@@ -111,7 +112,7 @@ const NavBar2 = ({ toggleSidebar, show }) => {
               </Link>
             </Nav.Item> */}
 
-            <Nav.Item className="expanded-cart">
+            <Nav.Item className="expanded-cart" style={{ cursor: "pointer" }}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
