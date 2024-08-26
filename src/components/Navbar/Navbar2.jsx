@@ -26,8 +26,8 @@ const NavBar2 = ({ toggleSidebar, show }) => {
 
   useEffect(() => {
     if (show) {
-      document.body.style.width = "92%";
-      document.body.style.marginLeft = "170px";
+      document.body.style.width = "88%";
+      document.body.style.marginLeft = "200px";
     } else {
       document.body.style.width = "100%";
       document.body.style.marginLeft = "0px";

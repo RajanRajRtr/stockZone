@@ -3,14 +3,14 @@ import "./style.css";
 import { FaStar } from "react-icons/fa";
 import { Col, Container, Row, Card } from "react-bootstrap";
 import { FaArrowRight } from "react-icons/fa";
-import { RiDoubleQuotesR , RiDoubleQuotesL, RiSingleQuotesL ,RiSingleQuotesR } from "react-icons/ri";
+import {
+  RiDoubleQuotesR,
+  RiDoubleQuotesL,
+  RiSingleQuotesL,
+  RiSingleQuotesR,
+} from "react-icons/ri";
 import avatar from "./../../Images/avatar.png";
-const spanstyle = {
-  backgroundColor: "#1154a3",
-  color: "white",
-  padding: "5px",
-  borderRadius: "20px",
-};
+
 const Testimonal = () => {
   return (
     <section className="testimonal background">
@@ -21,7 +21,7 @@ const Testimonal = () => {
           </h1>
         </Row>
         <Row className="my-4">
-          <Col md={4} sm={12}>
+          <Col md={4} sm={12} style={{ marginBottom: "3%" }}>
             <Card className="gradient-card">
               <Row className="mt-3">
                 <Col md={5}>
@@ -39,21 +39,26 @@ const Testimonal = () => {
                   <FaStar color="#ffc107" />
                   <FaStar color="#ffc107" />
                   <FaStar color="#ffc107" />
-                 
                 </Col>
               </Row>
               <Row className="my-4">
-                <h5> <RiSingleQuotesL size={16}/>Excellent Service And Trustable<RiSingleQuotesR size={16}/></h5>
+                <h5>
+                  {" "}
+                  <RiSingleQuotesL size={16} />
+                  Excellent Service And Trustable
+                  <RiSingleQuotesR size={16} />
+                </h5>
                 <p className="p-4">
                   {" "}
                   Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. 
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s.y.
                 </p>
               </Row>
             </Card>
           </Col>
-          <Col md={4} sm={12}>
-            <Card className="gradient-card">
+          <Col md={4} sm={12} style={{ marginBottom: "7%" }}>
+            <Card className="gradient-card my-3">
               <Row className="mt-3">
                 <Col md={5}>
                   <img
@@ -71,11 +76,15 @@ const Testimonal = () => {
                   <FaStar color="#ffc107" />
                   <FaStar color="#ffc107" />
                   <FaStar color="#ffc107" />
-                  <FaStar color="#ffc107" />  
+                  <FaStar color="#ffc107" />
                 </Col>
               </Row>
               <Row className="my-4">
-                <h5><RiSingleQuotesL size={16}/>We Deal with StockZone Share<RiSingleQuotesR size={16}/></h5>
+                <h5>
+                  <RiSingleQuotesL size={16} />
+                  We Deal with StockZone Share
+                  <RiSingleQuotesR size={16} />
+                </h5>
                 <p className="p-4">
                   {" "}
                   Lorem Ipsum is simply dummy text of the printing and
@@ -85,7 +94,7 @@ const Testimonal = () => {
               </Row>
             </Card>
           </Col>
-          <Col md={4} sm={12}>
+          <Col md={4} sm={12} style={{ marginBottom: "2%" }}>
             <Card className="gradient-card">
               <Row className="mt-3">
                 <Col md={5}>
@@ -107,14 +116,16 @@ const Testimonal = () => {
                 </Col>
               </Row>
               <Row className="my-4">
-                <h5><RiSingleQuotesL size={16}/>Excellent Service<RiSingleQuotesR size={16}/></h5>
+                <h5>
+                  <RiSingleQuotesL size={16} />
+                  Excellent Service
+                  <RiSingleQuotesR size={16} />
+                </h5>
                 <p className="p-4">
                   {" "}
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a type
-                  specimen book. 
+                  standard dummy text ever since the 1500s.
                 </p>
               </Row>
             </Card>
