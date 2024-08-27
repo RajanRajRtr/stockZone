@@ -16,9 +16,7 @@ const Testimonal = () => {
     <section className="testimonal background">
       <Container>
         <Row>
-          <h1 className="pb-3" style={{ color: "white" }}>
-            Testimonals
-          </h1>
+          <h1 className="pb-1">Testimonals</h1>
         </Row>
         <Row className="my-4">
           <Col md={4} sm={12}>
