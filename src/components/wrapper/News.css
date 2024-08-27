@@ -155,14 +155,14 @@ article:has(:hover, :focus) {
   }
 }
 
-@media (min-width: 320px) and (max-width: 376px) {
+@media (min-width: 322px) and (max-width: 376px) {
   article {
-    width: 290px !important;
+    width: 330px !important;
   }
 }
 
-@media (min-width: 377px) and (max-width: 425px) {
+@media screen and (max-width: 321px) {
   article {
-    width: 290px !important;
+    width: 268px !important;
   }
 }

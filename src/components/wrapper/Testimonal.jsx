@@ -21,7 +21,7 @@ const Testimonal = () => {
           </h1>
         </Row>
         <Row className="my-4">
-          <Col md={4} sm={12} style={{ marginBottom: "3%" }}>
+          <Col md={4} sm={12}>
             <Card className="gradient-card">
               <Row className="mt-3">
                 <Col md={5}>
@@ -94,7 +94,7 @@ const Testimonal = () => {
               </Row>
             </Card>
           </Col>
-          <Col md={4} sm={12} style={{ marginBottom: "2%" }}>
+          <Col md={4} sm={12}>
             <Card className="gradient-card">
               <Row className="mt-3">
                 <Col md={5}>
