@@ -32,7 +32,7 @@ const Testimonal = () => {
                     }}
                   />
                 </Col>
-                <Col md={7} className="mt-4">
+                <Col md={7}>
                   <h4>JhonDavid.A</h4>
                   <FaStar color="#ffc107" />
                   <FaStar color="#ffc107" />
@@ -55,8 +55,8 @@ const Testimonal = () => {
               </Row>
             </Card>
           </Col>
-          <Col md={4} sm={12} style={{ marginBottom: "7%" }}>
-            <Card className="gradient-card my-3">
+          <Col md={4} sm={12}>
+            <Card className="gradient-card mb-3">
               <Row className="mt-3">
                 <Col md={5}>
                   <img
