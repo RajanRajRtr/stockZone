@@ -35,7 +35,7 @@ const AdminLayout = ({ children }) => {
             <Offcanvas.Title>StockZone</Offcanvas.Title>
           </Offcanvas.Header>
           <Offcanvas.Body>
-            <ul>
+            <ul style={{ paddingLeft: "0px" }}>
               <li className="offcanvas_li py-3">
                 <Link to="/admin/Orders">View Orders</Link>
               </li>
