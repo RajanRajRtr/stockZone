@@ -9,7 +9,6 @@ const Performance = () => {
     {
       title: "Name",
       dataIndex: "name",
-      responsive: ["md", "sm", "lg", "xs"],
     },
     {
       title: "StockZone Share Price",
@@ -19,7 +18,6 @@ const Performance = () => {
     {
       title: "IPO Share Price",
       dataIndex: "math",
-      responsive: ["md", "sm", "lg"],
     },
     {
       title: "CMP Price",
@@ -29,7 +27,7 @@ const Performance = () => {
     {
       title: "Gain or Loss",
       dataIndex: "english",
-      responsive: ["md", "sm", "lg"],
+
       render: (text) => (
         <>
           {text > 0 ? (
@@ -47,7 +45,7 @@ const Performance = () => {
     {
       title: "Reports",
       dataIndex: "",
-      responsive: ["md", "sm", "lg"],
+
       render: (text) => (
         <>
           {/* <Button variant="info"> */}
