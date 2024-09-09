@@ -19,8 +19,8 @@ const Testimonal = () => {
           <h1 className="pb-1">Testimonals</h1>
         </Row>
         <Row className="my-4">
-          <Col md={4} sm={12}>
-            <Card className="gradient-card">
+          <Col md={4} sm={12} style={{ marginTop: "5px" }}>
+            <Card className="gradient-card ">
               <Row className="mt-3">
                 <Col md={5}>
                   <img
@@ -55,8 +55,8 @@ const Testimonal = () => {
               </Row>
             </Card>
           </Col>
-          <Col md={4} sm={12}>
-            <Card className="gradient-card mb-3">
+          <Col md={4} sm={12} style={{ marginTop: "5px" }}>
+            <Card className="gradient-card ">
               <Row className="mt-3">
                 <Col md={5}>
                   <img
@@ -92,7 +92,7 @@ const Testimonal = () => {
               </Row>
             </Card>
           </Col>
-          <Col md={4} sm={12}>
+          <Col md={4} sm={12} style={{ marginTop: "5px" }}>
             <Card className="gradient-card">
               <Row className="mt-3">
                 <Col md={5}>

@@ -127,9 +127,7 @@ const NavBar = () => {
                   <Dropdown.Item as={Link} to="/TrainingServices">
                     Training Services
                   </Dropdown.Item>
-                  {/* <Dropdown.Item as={Link} to="/TradingServices">
-            Trading Services
-          </Dropdown.Item> */}
+
                   <Dropdown.Item as={Link} to="/IPO_Services">
                     Per IPO Shares
                   </Dropdown.Item>
@@ -154,16 +152,6 @@ const NavBar = () => {
                   onClick={() => setExpand(false)}
                 >
                   <span className="nav-link-label">Contact Us</span>
-                </Link>
-              </Nav.Item>
-              <Nav.Item>
-                <Link
-                  aria-label="Go to Shop Page"
-                  className={isFixed ? "d-none" : "navbar-link"}
-                  to="/adminlogin"
-                  onClick={() => setExpand(false)}
-                >
-                  <span className="nav-link-label">AdminLogin</span>
                 </Link>
               </Nav.Item>
 
