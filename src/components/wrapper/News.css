@@ -149,9 +149,14 @@ article:has(:hover, :focus) {
   width: 1px;
 }
 
-@media (min-width: 426px) and (max-width: 768px) {
+@media (min-width: 620px) and (max-width: 768px) {
   article {
     width: 290px !important;
+  }
+}
+@media (min-width: 430px) and (max-width: 619px) {
+  article {
+    width: 100% !important;
   }
 }
 

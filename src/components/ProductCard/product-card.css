@@ -196,7 +196,20 @@ button.add {
   }
 }
 
-@media (min-width: 427px) and (max-width: 768px) {
+@media (min-width: 430px) and (max-width: 610px) {
+  .button-container {
+    width: 90%;
+    margin-bottom: 4%;
+  }
+
+  .product {
+    height: 56vh;
+    padding: 25px;
+    width: 100%;
+  }
+}
+
+@media (min-width: 621px) and (max-width: 768px) {
   .button-container {
     width: 90%;
     margin-bottom: 4%;
