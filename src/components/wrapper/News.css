@@ -10,7 +10,7 @@ article {
   transform-origin: center;
   transition: all 0.4s ease-in-out;
   overflow: hidden;
-  width: 370px !important;
+  /* width: 370px !important; */
 }
 
 article a::after {
@@ -160,15 +160,15 @@ article:has(:hover, :focus) {
   }
 }
 
-@media (min-width: 3766px) and (max-width: 425px) {
+@media (min-width: 376px) and (max-width: 425px) {
   article {
-    width: 320px !important;
+    width: 100% !important;
   }
 }
 
-@media (min-width: 322px) and (max-width: 375px) {
+@media (min-width: 322px) and (max-width: 374px) {
   article {
-    width: 330px !important;
+    width: 100% !important;
   }
 }
 
