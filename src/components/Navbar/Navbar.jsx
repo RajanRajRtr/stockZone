@@ -25,6 +25,13 @@ const NavBar = () => {
   //     setCartItem(JSON.parse(storedCart));
   //   }
   // },[])
+
+  const handleClick = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth", // This will make the scroll smooth
+    });
+  };
   return (
     <>
       <div className="TOPbar p-2">
@@ -91,6 +98,7 @@ const NavBar = () => {
               aria-controls="basic-navbar-nav"
               onClick={() => {
                 setExpand(expand ? false : "expanded");
+                handleClick();
               }}
             >
               <span></span>
